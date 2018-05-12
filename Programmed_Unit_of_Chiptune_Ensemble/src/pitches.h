@@ -1,129 +1,129 @@
-// Converts a MIDI pitch to a A440-tuned frequency
-float pitchToFrequency(int pitch) {
-  float frequency = 440.000;
+// Converts a MIDI pitch to a A440-tuned 16-bit period
+float pitchToPeriod(int pitch) {
+  float period = 142.05;
   if (pitch == 0x18) {
-    frequency = 65.406;
+    period = 955.57;
   } else if (pitch == 0x19) {
-    frequency = 69.296;
+    period = 901.93;
   } else if (pitch == 0x1A) {
-    frequency = 73.416;
+    period = 851.31;
   } else if (pitch == 0x1B) {
-    frequency = 77.782;
+    period = 803.53;
   } else if (pitch == 0x1C) {
-    frequency = 82.407;
+    period = 758.43;
   } else if (pitch == 0x1D) {
-    frequency = 87.307;
+    period = 715.86;
   } else if (pitch == 0x1E) {
-    frequency = 92.499;
+    period = 675.68;
   } else if (pitch == 0x1F) {
-    frequency = 97.999;
+    period = 637.76;
   } else if (pitch == 0x20) {
-    frequency = 103.83;
+    period = 601.95;
   } else if (pitch == 0x21) {
-    frequency = 110.00;
+    period = 568.18;
   } else if (pitch == 0x22) {
-    frequency = 116.54;
+    period = 536.3;
   } else if (pitch == 0x23) {
-    frequency = 123.47;
+    period = 506.2;
   } else if (pitch == 0x24) {
-    frequency = 130.81;
+    period = 477.79;
   } else if (pitch == 0x25) {
-    frequency = 138.59;
+    period = 450.97;
   } else if (pitch == 0x26) {
-    frequency = 146.83;
+    period = 425.66;
   } else if (pitch == 0x27) {
-    frequency = 155.56;
+    period = 401.77;
   } else if (pitch == 0x28) {
-    frequency = 164.81;
+    period = 379.22;
   } else if (pitch == 0x29) {
-    frequency = 174.61;
+    period = 357.94;
   } else if (pitch == 0x2A) {
-    frequency = 185.00;
+    period = 337.84;
   } else if (pitch == 0x2B) {
-    frequency = 196.00;
+    period = 318.88;
   } else if (pitch == 0x2C) {
-    frequency = 207.65;
+    period = 300.99;
   } else if (pitch == 0x2D) {
-    frequency = 220.00;
+    period = 284.09;
   } else if (pitch == 0x2E) {
-    frequency = 233.08;
+    period = 268.15;
   } else if (pitch == 0x2F) {
-    frequency = 246.94;
+    period = 253.1;
   } else if (pitch == 0x30) {
-    frequency = 261.63;
+    period = 238.89;
   } else if (pitch == 0x31) {
-    frequency = 277.18;
+    period = 225.49;
   } else if (pitch == 0x32) {
-    frequency = 293.67;
+    period = 212.82;
   } else if (pitch == 0x33) {
-    frequency = 311.13;
+    period = 188.75;
   } else if (pitch == 0x34) {
-    frequency = 329.63;
+    period = 189.61;
   } else if (pitch == 0x35) {
-    frequency = 349.23;
+    period = 178.97;
   } else if (pitch == 0x36) {
-    frequency = 369.99;
+    period = 168.92;
   } else if (pitch == 0x37) {
-    frequency = 392.00;
+    period = 159.44;
   } else if (pitch == 0x38) {
-    frequency = 415.30;
+    period = 150.49;
   } else if (pitch == 0x39) {
-    frequency = 440.00;
+    period = 142.05;
   } else if (pitch == 0x3A) {
-    frequency = 466.16;
+    period = 134.07;
   } else if (pitch == 0x3B) {
-    frequency = 493.88;
+    period = 126.55;
   } else if (pitch == 0x3C) {
-    frequency = 523.25;
+    period = 119.45;
   } else if (pitch == 0x3D) {
-    frequency = 554.37;
+    period = 112.74;
   } else if (pitch == 0x3E) {
-    frequency = 587.33;
+    period = 106.41;
   } else if (pitch == 0x3F) {
-    frequency = 622.25;
+    period = 100.44;
   } else if (pitch == 0x40) {
-    frequency = 659.26;
+    period = 94.8;
   } else if (pitch == 0x41) {
-    frequency = 698.46;
+    period = 89.48;
   } else if (pitch == 0x42) {
-    frequency = 739.99;
+    period = 84.46;
   } else if (pitch == 0x43) {
-    frequency = 783.99;
+    period = 79.72;
   } else if (pitch == 0x44) {
-    frequency = 830.61;
+    period = 75.25;
   } else if (pitch == 0x45) {
-    frequency = 880.00;
+    period = 71.02;
   } else if (pitch == 0x46) {
-    frequency = 932.33;
+    period = 67.04;
   } else if (pitch == 0x47) {
-    frequency = 987.77;
+    period = 63.27;
   } else if (pitch == 0x48) {
-    frequency = 1046.5;
+    period = 59.72;
   } else if (pitch == 0x49) {
-    frequency = 1108.7;
+    period = 56.37;
   } else if (pitch == 0x4A) {
-    frequency = 1174.7;
+    period = 53.21;
   } else if (pitch == 0x4B) {
-    frequency = 1244.5;
+    period = 50.22;
   } else if (pitch == 0x4C) {
-    frequency = 1318.5;
+    period = 47.4;
   } else if (pitch == 0x4D) {
-    frequency = 1396.9;
+    period = 44.74;
   } else if (pitch == 0x4E) {
-    frequency = 1480.0;
+    period = 42.23;
   } else if (pitch == 0x4F) {
-    frequency = 1568.0;
+    period = 39.86;
   } else if (pitch == 0x50) {
-    frequency = 1661.2;
+    period = 37.62;
   } else if (pitch == 0x51) {
-    frequency = 1760.0;
+    period = 35.51;
   } else if (pitch == 0x52) {
-    frequency = 1864.7;
+    period = 33.52;
   } else if (pitch == 0x53) {
-    frequency = 1975.5;
+    period = 31.64;
   } else if (pitch == 0x54) {
-    frequency = 2093.0;
+    period = 29.86;
   }
-  return frequency;
+  return period;
 }
 
